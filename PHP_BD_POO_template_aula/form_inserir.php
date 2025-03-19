@@ -1,3 +1,8 @@
+<?php
+    require_once 'DBClientes.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
