@@ -47,7 +47,11 @@
             case 'consultar':
                 $cliente = $bdClientes->read($id);
                 if ($cliente) {
-                    echo "<p>Nome encontrado: " . $cliente['nome'] . "</p>";
+                    echo "<h2>Dados do Cliente</h2>";
+                    echo "ID: " . htmlspecialchars($cliente['id']) . "<br>";
+                    echo "Nome: " . htmlspecialchars($cliente['nome']) . "<br>";
+                    echo "CPF: " . htmlspecialchars($cliente['CPF']) . "<br>";
+                    echo "Email: " . htmlspecialchars($cliente['email']) . "<br>";
                 } else {
                     echo "<p>Nenhum cliente encontrado para o ID fornecido.</p>";
                 }
